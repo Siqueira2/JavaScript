@@ -1,0 +1,14 @@
+// comentário em JS
+<!-- --> Comentário em HTML
+/* */ comentário em CSS e JS
+
++ serve para concatenação no JS
+
+document.write - escreve na tela
+document.writeln - escreve na tela e pula a linha
+
+Formatar números
+.toFixed(número de casas) para definir o número de casas decimais
+.replace('.', ',') Troca o ponto por vírgula
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - Macete para localizar moedas 

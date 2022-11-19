@@ -1,0 +1,21 @@
+Aula 06
+o + server para concatenação
+
+*para converter uma string > number*
+
+Number.Int(n) para inteiro
+Number.Float(n) para real
+Number(n) e o VS se vira
+
+*para converter um number > string*
+
+String(n)
+n.to.String
+
+${n} place holder - sendo n a váriavel
+
+s.length - diz quantas letras tem a string
+
+s.toUpperCase() tudo para maiuscula
+
+s.toLowerCase() tudo para minuscula

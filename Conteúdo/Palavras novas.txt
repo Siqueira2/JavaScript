@@ -1,0 +1,16 @@
+HTML
+class
+value
+<br>
+text maincolor
+disabled
+location.reload() - para apagar as informações e deixar tudo vazio
+eval
+
+CSS
+width
+heigth
+boder-radius
+margin-bottom
+display
+cursor: pointer (muda o mouse ao passar em cima)
