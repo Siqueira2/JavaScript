@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To do List</h1>
+      <input type="text" id="txt" /><br />
+      <button id="btn">Enviar</button>
+
+      <ul id="list">
+        <li>Estudar</li>
+        <li>Levar lixo</li>
+        <li>Academia</li>
+      </ul>
+    </div>
+
+    <script>
+      const text = document.querySelector("#txt");
+      const btn = document.querySelector("#btn");
+      const list = document.querySelector("#list");
+
+      btn.addEventListener("click", () => {
+        let task = document.createElement("li");
+        task.innerText = text.value;
+        list.appendChild(task);
+      });
+
+      btn.addEventListener("keyup", (e) => {
+        if (e.key === "Enter") {
+          let task = document.createElement("li");
+          task.innerText = text.value;
+          list.appendChild(task);
+        }
+      });
+    </script>
+  </body>
+</html>

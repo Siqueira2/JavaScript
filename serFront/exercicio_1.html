@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <textarea cols="30" rows="10" readonly>
+Contrato de serviços prestados</textarea
+      >
+      <label>
+        <input type="checkbox" id="chk" /> Li e aceito os termos do contrato
+      </label>
+      <input type="submit" value="Enviar" id="btn" />
+    </form>
+    <script>
+      const btn = document.querySelector("#btn");
+      const checkbox = document.querySelector("chk");
+
+      checkbox.addEventListener("change", () => {
+        toggleBtn();
+      });
+
+      const toggleBtn = () => {
+        btn.disabled = !checkbox.checked;
+      };
+    </script>
+  </body>
+</html>
