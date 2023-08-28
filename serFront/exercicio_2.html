@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo</title>
+
+    <style>
+      .done {
+        text-decoration: line-through;
+        color: #ccc;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -24,18 +31,20 @@
       const list = document.querySelector("#list");
 
       btn.addEventListener("click", () => {
-        let task = document.createElement("li");
-        task.innerText = text.value;
-        list.appendChild(task);
+        addTask();
       });
 
       btn.addEventListener("keyup", (e) => {
-        if (e.key === "Enter") {
-          let task = document.createElement("li");
-          task.innerText = text.value;
-          list.appendChild(task);
-        }
+        if (e.key === "Enter") addTask();
       });
+
+      const addTask = () => {
+        let task = document.createElement("li");
+        task.innerText = text.value;
+        list.appendChild(task);
+      };
+
+      const removeTask = (item) => {};
     </script>
   </body>
 </html>
