@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Opens sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  background: #fff;
+  width: 100%;
+}
+
+.logo-text {
+  text-transform: uppercase;
+  background: #63c6ae;
+  font-size: 24px;
+  padding: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  float: left;
+}
+
+.header__btnMenu {
+  display: none;
+}
+
+.header__nav {
+  clear: left;
+}
+
+.header__nav li {
+  list-style: none;
+  background: #242c2c;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__nav a {
+  text-transform: uppercase;
+  color: #586165;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  padding: 25px 0;
+  transition: 0.5s ease;
+}
+
+.header__nav a:hover {
+  cursor: pointer;
+  color: #63c6ae;
+}
+
+.hero {
+  height: 80vh;
+  padding: 40px 20px;
+  text-align: center;
+  background-image: url(../img/01.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__title {
+  background: #63c6ae;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 30px 20px;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  background: #242a2c;
+  margin: 5px 30px 35px;
+  color: white;
+  padding: 20px;
+  font-size: 10px;
+}
+
+.hero__btn {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 15px 25px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
