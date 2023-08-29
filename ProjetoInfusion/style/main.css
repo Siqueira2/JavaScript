@@ -6,6 +6,12 @@
 
 body {
   font-family: "Opens sans", sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
 img {
@@ -56,7 +62,6 @@ img {
 }
 
 .header__nav a:hover {
-  cursor: pointer;
   color: #63c6ae;
 }
 
@@ -64,11 +69,17 @@ img {
   height: 80vh;
   padding: 40px 20px;
   text-align: center;
-  background-image: url(../img/01.jpg);
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(45deg, white 50%, transparent 50%) no-repeat left
+      calc(50% + 20px) bottom,
+    linear-gradient(-45deg, white 50%, transparent 50%) no-repeat left
+      calc(50% - 20px) bottom,
+    url(../img/01.jpg);
+  background-size: 40px 40px, 40px 40px, cover;
 }
 
 .hero__title {
@@ -85,7 +96,7 @@ img {
   margin: 5px 30px 35px;
   color: white;
   padding: 20px;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .hero__btn {
@@ -99,4 +110,114 @@ img {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
+}
+
+.people__cards {
+  margin-top: 2.5em;
+}
+
+.card:hover {
+  outline: 5px solid #63c6ae;
+  outline-offset: -5px;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__avatar {
+  margin: -55px auto;
+  width: 88px;
+  height: 88px;
+  overflow: hidden;
+}
+
+.card:hover .card__avatar img {
+  transform: translateY(-50%);
+}
+
+.card__content {
+  text-align: center;
+  padding: 60px 25px 10px;
+  border-left: 1px solid #dbe1e7;
+}
+
+.card__title {
+  font-weight: 300;
+  color: #737c85;
+  font-size: 21px;
+}
+
+.card__text {
+  color: #929da5;
+  font-size: 14px;
+}
+
+.card:hover .card__title,
+.card:hover .card__text {
+  color: #63c6ae;
+}
+
+.content {
+  background: #f8f9f9;
+  padding: 20px 0 80px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.content h3 {
+  color: #737c85;
+  font-size: 21px;
+  padding-top: 40px;
+  font-weight: 400;
+}
+
+.content p {
+  color: #929da5;
+  font-size: 14px;
+  word-spacing: 3px;
+}
+
+.button {
+  padding: 15px 40px;
+  border-radius: 3px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 15px;
+  display: inline-block;
+  transition: background 0.5s;
+}
+
+.button__primary {
+  background: #69c6ae;
+}
+
+.button__secondary {
+  background: #455357;
+}
+
+.last_articles__title {
+  background: #63c6ae;
+  color: white;
+}
+
+.last_articles__title h2 {
+  font-weight: 400;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.last_articles__thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 0;
+}
+
+.last_articles__thumbs img {
+  display: block;
+  width: 100%;
 }
