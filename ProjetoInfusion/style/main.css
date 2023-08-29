@@ -12,6 +12,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 1em;
+  max-width: 980px;
 }
 
 img {
@@ -21,6 +22,15 @@ img {
 .header {
   background: #fff;
   width: 100%;
+}
+
+.js .header {
+  position: fixed;
+  width: 100%;
+}
+
+.js .header__nav {
+  transform: 0.2s;
 }
 
 .logo-text {
@@ -33,10 +43,7 @@ img {
   text-decoration: none;
   display: block;
   float: left;
-}
-
-.header__btnMenu {
-  display: none;
+  text-align: right;
 }
 
 .header__nav {
@@ -63,6 +70,14 @@ img {
 
 .header__nav a:hover {
   color: #63c6ae;
+}
+
+.header__btnMenu {
+  float: right;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  margin: 1.5em;
 }
 
 .hero {
@@ -220,4 +235,120 @@ img {
 .last_articles__thumbs img {
   display: block;
   width: 100%;
+}
+
+.laptop_slider {
+  background: #242a2c;
+  padding: 150px 0 100px;
+  overflow: auto;
+}
+
+.slideshow {
+  white-space: nowrap;
+}
+
+.laptop_slider figure {
+  display: inline-block;
+}
+
+.quote_container {
+  background: #63c6ae;
+  padding: 50px 0;
+  border-bottom: 12px solid #48b9a1;
+}
+
+.quote_slideshow h2 {
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.quote_slideshow figcaption {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.no-js .quote_slideshow figure + figure {
+  margin-top: 5em;
+}
+
+.footer {
+  background: #242a2c;
+  padding: 50px 0 250px;
+  color: #454e51;
+  font-size: 14px;
+}
+
+.footer__links li {
+  list-style-type: none;
+}
+
+.footer__links a {
+  color: #454e51;
+  display: block;
+  font-weight: 600;
+}
+
+.footer__logo {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    position: fixed;
+  }
+
+  .logo-text {
+    width: 25%;
+  }
+
+  .header__btnMenu {
+    display: none;
+  }
+
+  .header__nav {
+    float: left;
+    width: 75%;
+    clear: none;
+  }
+
+  .header__nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header__nav li {
+    border-bottom: none;
+    flex-grow: 1;
+  }
+
+  .header__nav a {
+    background: white;
+  }
+
+  .people__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .last_articles__thumbs {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .footer .container {
+    display: flex;
+  }
+
+  .footer .container > * {
+    margin: 1.5em;
+  }
 }
